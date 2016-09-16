@@ -46,7 +46,7 @@ function renderButtons()
       var title = $(this).data("name");
 
       // set query URL to query based on the game show name (as typed in by the user), return a limit of 10 gif's, and sets the rating to PG
-      var queryURL = "http://api.giphy.com/v1/gifs/search?q=" + title + "&api_key=dc6zaTOxFJmzC&limit=10&rating=pg";
+      var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + title + "&api_key=dc6zaTOxFJmzC&limit=10&rating=pg";
 
       $.ajax({url: queryURL, method: 'GET'}).done(function(response)
       {
